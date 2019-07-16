@@ -1,5 +1,6 @@
 @import 'vanilla-framework/scss/build';
 
-@import 'pattern-suru';
-
-@include canonical-p-suru;
+@import 'pattern_strip';
+@import 'pattern_heading-highlight';
+@include canonical-p-strip;
+@include canonical-p-heading-highlight;
