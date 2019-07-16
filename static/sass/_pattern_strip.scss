@@ -1,0 +1,28 @@
+@mixin canonical-p-strip {
+  .p-strip--suru {
+    @extend %vf-strip;
+    background-image:
+      linear-gradient(to top left, #fff 0%, #fff 49%, rgba(255,255,255,0) 50%, transparent 100%),
+      linear-gradient(to bottom left, rgba(225,225,225,0.05) 0%, rgba(225,225,225,0.05) 49.9%, rgba(225,225,225,0) 50%, rgba(225,225,225,0) 100%),
+      linear-gradient(to bottom right, rgba(225,225,225,0.05) 0%, rgba(225,225,225,0.05) 49.9%, rgba(225,225,225,0) 50%, rgba(225,225,225,0) 100%),
+      linear-gradient(to top right, rgba(225,225,225,0.05) 0%, rgba(225,225,225,0.05) 49.9%, rgba(225,225,225,0) 50%, rgba(225,225,225,0) 100%),
+      linear-gradient(to top left, rgba(225,225,225,0.05) 0%, rgba(225,225,225,0.05) 49.9%, rgba(225,225,225,0) 50%, rgba(225,225,225,0) 100%),
+      linear-gradient(199deg, #8b3236 -20%, #5E2750 25%, #2C001E 50%);
+    background-position:
+      bottom left,
+      top right,
+      top left,
+      bottom left,
+      bottom right, 100%;
+    background-repeat: no-repeat;
+    background-size:
+      100% 5%,
+      70% 25%,
+      70% 45%,
+      70% 25%,
+      110% 85%,
+      100%;
+    color: $color-x-light;
+    position: relative;
+  }
+}
